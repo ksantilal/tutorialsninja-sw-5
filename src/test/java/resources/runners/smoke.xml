@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite" verbose="1">
+    <groups>
+        <run>
+            <include name="smoke"></include>
+        </run>
+    </groups>
+    <listeners>
+        <listener class-name="com.tutorialsninja.demo.customlisteners.CustomListeners"/>
+    </listeners>
+    <test name="smoke Test">
+        <classes>
+            <class name="com.tutorialsninja.demo.testsuite.DesktopPageTest"></class>
+            <class name="com.tutorialsninja.demo.testsuite.LaptopsAndNoteBooksPageTest"></class>
+            <class name="com.tutorialsninja.demo.testsuite.TopMenuPageTest"></class>
+            <class name="com.tutorialsninja.demo.testsuite.MyAccountPageTest"></class>
+        </classes>
+    </test>
+</suite>
